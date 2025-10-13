@@ -28009,19 +28009,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    2016-07-01
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -28033,34 +28020,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -40044,6 +40003,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/2025-10-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025-10-11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/2025-10-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025-10-12
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/2025-10-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025-10-13
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -40071,23 +40099,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -40103,7 +40114,6 @@
 
 
 <h1 id="2016-07-01">2016-07-01</h1>
-<h2 id="1">1</h2>
 <p>如何实现一个神经网络</p>
 <p>http://peterroelants.github.io/</p>
 <p>这一章是一个5(+2)指南的一部分，指南讲述的是如何实现简单的神经网络模型。你可以通过链接找到余下的指南：</p>
@@ -40151,30 +40161,25 @@ def gradient(w, x, t):
 
 return 2 * x * (nn(x, w) - t)
 
-
 define the update function delta w
 
 def delta_w(w_k, x, t, learning_rate):
 
 return learning_rate * gradient(w_k, x, t).sum()
 
-
 Set the initial weight parameter
 
 w = 0.1
 
-
 Set the learning rate
 
 learning_rate = 0.1
-
 
 Start performing the gradient descent updates, and print the weights and cost:
 
 nb_of_iterations = 4  # number of gradient descent updates
 
 w_cost = [(w, cost(nn(x, w), t))]  # List to store the weight, costs values
-
 
 for i in range(nb_of_iterations):
 
@@ -40183,7 +40188,6 @@ dw = delta_w(w, x, t, learning_rate)  # Get the delta w update
 w = w - dw  # Update the current weight parameter
 
 w_cost.append((w, cost(nn(x, w), t)))  # Add weight, cost to list
-
 
 # Print the final w, and cost
 
@@ -40214,7 +40218,6 @@ plt.plot(w1, c1, 'bo')
 plt.plot([w1, w2],[c1, c2], 'b-')  
 
 plt.text(w1, c1+0.5, '$w({})$'.format(i))
-
 
 Plot the last weight, axis, and show figure
 
