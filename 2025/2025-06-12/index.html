@@ -26,6 +26,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -104,6 +114,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -40266,8 +40302,8 @@
 
 
 
-<h1 id="2025-06-12">2025-06-12</h1>
-<h2 id="1">1</h2>
+<h1 id="2025-06-12">2025-06-12<a class="headerlink" href="#2025-06-12" title="复制链接到此章节">&para;</a></h1>
+<h2 id="1">1<a class="headerlink" href="#1" title="复制链接到此章节">&para;</a></h2>
 <p>粉丝群里有人说自己安装某“精简版” Windows 10，结果发现里面被塞了一些国产软件，还卸载不掉。就好像在直播间买了减肥药，吃完之后屁股上的肉确实下去了，但脸上鼓出几块肉来。</p>
 <p>我之前说过，现在的 CPU 性能相对软件来说是过剩的，硬盘也便宜，所以如今再安装“精简版”的意义不是很大。但如果出于某些原因确实要折腾的话，可以考虑以下开源的 Windows 定制项目：</p>
 <p>AME Wizard（github.com/Ameliorated-LLC），基于被称作 Playbook 的 YAML 脚本对已安装 Windows 进行深度定制的工具。下面提到的 ReviOS、AtlasOS、RapidOS 都和这个项目有关联。使用 AME Wizard 甚至可以把 Windows Update 都删掉，得到一个静默状态下不产生任何网络连接、难以被跟踪的 Windows 系统。</p>
@@ -40276,11 +40312,11 @@
 <p>RapidOS（github.com/rapid-community/RapidOS），类似 AtlasOS。</p>
 <p>Optimize-Offline（github.com/DrEmpiricism/Optimize-Offline），一个对  Windows 10 安装镜像进行修改的工具。也就是说，你可以从微软官方下载 Windows 10 安装镜像，用 Optimize-Offlineze 对其进行精简，然后安装。</p>
 <p>还有个类似 Optimize-Offline 的工具叫 NTLite，但不开源</p>
-<h2 id="2">2</h2>
+<h2 id="2">2<a class="headerlink" href="#2" title="复制链接到此章节">&para;</a></h2>
 <p>在中国存在一个奇特的现象，中下层群众普遍爱国，而越是受到优待的群体越恨国。这些人包括某些二代三代、文科知识分子、先天身份特权人士、女拳师等。</p>
 <p>这些人有一个共同点，就是“无功而赏”。韩非子：“且夫发囷仓而赐贫穷者， 是赏无功也； 论囹圄而出薄罪者， 是不诛过也。夫赏无功， 则民偷幸而望于上； 不诛过， 则民不惩而易为非。”对国家没有贡献却受到厚待的人，并不会因此感谢国家，反而会激发他们更加贪婪的欲望。普通老百姓，只要丰衣足食、安居乐业就会爱国，而这些无功而赏者，在吃饱喝足之余，还会要求权力，否则就会闲着没事骂自己的国家。</p>
 <p>西方的白左也总是强调“照顾弱势群体”，而不管他们对国家有没有贡献，结果把“弱势群体”变成了“特权群体”，使国家失去了进步的动力，毁坏了存在对根基</p>
-<h2 id="3">3</h2>
+<h2 id="3">3<a class="headerlink" href="#3" title="复制链接到此章节">&para;</a></h2>
 <p>伦敦会谈节奏感不错，走上正轨了</p>
 <ol>
 <li>
@@ -40305,7 +40341,7 @@
 <p>可以预期，中美会谈的节奏感会越来越强。急不得的事，就不急，谈不成就各自努力。中国芯片研发继续努力，美国军工企业也得想办法自己搞稀土。能谈成的，也会有，说不定中美经贸还能维持甚至扩大。贸易战没有赢家，中方不愿打，但也不怕打，美方内心已经同意了。</p>
 </li>
 </ol>
-<h2 id="4">4</h2>
+<h2 id="4">4<a class="headerlink" href="#4" title="复制链接到此章节">&para;</a></h2>
 <p>好多小伙伴让我聊一下妈妈岗，国服的速度真是一日千里。</p>
 <p>我对妈妈岗的评价极高，这个政策提出者对当下社会环境以及人口问题的洞察非常精准，应该也非常深刻的吸收了日服庶务科的经验，且相比我们的纸上谈兵，他还做了非常好的本土化落地，没有生搬硬套，堪称是中国特色版庶务科，一线工作者智慧的集中体现。</p>
 <p>妈妈岗的本质是精准扶贫，</p>
@@ -40388,7 +40424,7 @@
 <p>真正的道理是一通百通的，万斯不知道妈妈岗，日本当年的那堆企业也无法预料今天的情况</p>
 <p>但市场，人性，经济规律是不变的。</p>
 <p>我们总是傲慢的认为，自己不一样，但每一次，历史也都会残酷的回答我们，这次，也一样</p>
-<h2 id="5">5</h2>
+<h2 id="5">5<a class="headerlink" href="#5" title="复制链接到此章节">&para;</a></h2>
 <p>有句话含金量很高，值得时不时看看，你要悟了就有了金刚不坏身。</p>
 <p>没有谁可以从精神上伤害你，除非你的反馈赋予其力量。 ​​​</p>
 

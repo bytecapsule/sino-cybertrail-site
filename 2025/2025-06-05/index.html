@@ -26,6 +26,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -104,6 +114,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -40284,14 +40320,14 @@
 
 
 
-<h1 id="2025-06-05">2025-06-05</h1>
-<h2 id="1">1</h2>
+<h1 id="2025-06-05">2025-06-05<a class="headerlink" href="#2025-06-05" title="复制链接到此章节">&para;</a></h1>
+<h2 id="1">1<a class="headerlink" href="#1" title="复制链接到此章节">&para;</a></h2>
 <p>“梁博，我昨天一个实习面试搞砸了，面试官问我用一两句话概括对大模型的理解，解决了什么问题，为什么能解决这些问题。我一下子就懵了，我一个大四学生，哪能有很高的理解水平呢，又向往大模型公司，这个问题要怎么回答呢？”</p>
 <p>答：我认为大模型的核心价值2C来说是压缩信息差，此前搜索引擎做到了一部分，但是缺2个。第一个是泛化能力，搜索引擎相当于从自己知识库找到相关性高的答案给出，没有自己的理解。第二个是受限于注意力机制，只能按照按一定排序算法顺序给出参考，距离最终答案还需要人工做最后解读和整理。而大模型解决了这些问题，一步到位直接给答案，极大的压缩了信息差，实现了信息进一步公平。</p>
 <p>2B来说是整理数据的能力大大提高了，我们此前整理数据，使用了各种各样的自然语言处理工具，整理效果和性能都不行，大模型把这方面能力大大提高了，这也使得中美两国，包括一些拥有巨大数据的公司，Palantire，彭博，还有一些对冲基金公司的数据被更高效的整理，整体价值大大提高了。</p>
 <p>至于为什么大模型解决了这些问题，有两个特别牛逼的结合，第一个是注意力机制，这个解决了对输入的精准理解。第二个是残差网络，这个解决了深度神经网络训练梯度消失，梯度爆炸的问题。而深度神经网络可以拟合任何输入和输出的特性，加上上面2条改进，就成为无敌的利器。</p>
 <p>当然我的回答可能还是繁琐了一些，如果简单来说，2C是压缩信息差，2B是提高数据整理能力。核心改进是注意力机制（首创）和残差网络（借鉴），这么回答基本可以过关了。。</p>
-<h2 id="2">2</h2>
+<h2 id="2">2<a class="headerlink" href="#2" title="复制链接到此章节">&para;</a></h2>
 <p>律师写给普通人二手车避坑攻略（总做二手车案子）第9点很重要。</p>
 <p>1.二手车最大的坑就是这个车有可能是：重大事故车、水泡车、火烧车。如果卖家和你承诺不是这类车，那就让他写合同里</p>
 <p>2.有的二手车贩子会偷换概念，会写车辆「四梁六柱无切」不行！需要明确承诺该车“无重大事故”</p>
@@ -40305,7 +40341,7 @@
 <p>8.维保记录≠检测记录。维保记录一般叫车信盟和车300，检测记录是查博士和维真，一辆车必须看维保记录和检测记录，看完这两个没问题规避50%风险。剩下50%风险在最后。</p>
 <p>9.别买（见图片专业人士建议） </p>
 <p><code>律师说法</code></p>
-<h2 id="3">3</h2>
+<h2 id="3">3<a class="headerlink" href="#3" title="复制链接到此章节">&para;</a></h2>
 <p>Products with extensive/rich UIs lots of sliders, switches, menus, with no scripting support, and built on opaque, custom, binary formats are ngmi in the era of heavy human+AI collaboration.</p>
 <p>If an LLM can't read the underlying representations and manipulate them and all of the related settings via scripting, then it also can't co-pilot your product with existing professionals and it doesn't allow vibe coding for the 100X more aspiring prosumers.</p>
 <p>Example high risk (binary objects/artifacts, no text DSL): every Adobe product, DAWs, CAD/3D</p>
@@ -40313,13 +40349,13 @@
 <p>Example medium-low risk (mostly but not entirely text already, some automation/plugins ecosystem): Excel</p>
 <p>Example low risk (already just all text, lucky!): IDEs like VS Code, Figma, Jupyter, Obsidian, ...</p>
 <p>AIs will get better and better at human UIUX (Operator and friends), but I suspect the products that attempt to exclusively wait for this future without trying to meet the technology halfway where it is today are not going to have a good time.</p>
-<h2 id="4">4</h2>
+<h2 id="4">4<a class="headerlink" href="#4" title="复制链接到此章节">&para;</a></h2>
 <p>天崩，一个小时内马斯克和特朗普的关系急转直下：</p>
 <p>特朗普在椭圆形办公室回应马斯克反对BBB：我对马斯克很失望。他比在座的任何人都更了解这项法案的内部运作…当他发现我们要削减电动汽车强制令时，才开始反对…我帮过他很多……（见视频）马斯克马上发帖回怼：错误，这项法案从来没有给我看过一次，而且是在深夜迅速通过的，几乎没有国会议员能够读到它！（图2）</p>
 <p>过了十分钟马斯克觉得不解恨，又找到特朗普对马斯克表示失望的更长版本的视频，在下面直接回复：如果没有我，特朗普将会输掉选举，民主党将控制众议院，共和党将在参议院以51比 49获胜。如此忘恩负义！（图3）</p>
 <p>然后，马斯克还挖坟特朗普之前2013年反对增加债务上限的帖子，转发出来给置顶了（图4），最新：他转发了一条特朗普没当总统时反对增加债务帖子的合订本，然后把这条换到了置顶（图5）……截止我睡觉前，马斯克还在输出中</p>
 <p>我想不出这事要如何收场了……马斯克如果和特朗普彻底撕破脸，我觉得不止是美国要爆炸…… http://t.cn/A6ecEQvD</p>
-<h2 id="5">5</h2>
+<h2 id="5">5<a class="headerlink" href="#5" title="复制链接到此章节">&para;</a></h2>
 <p>关于中美通话的快速评论</p>
 <p>1 我之前念叨过多次的特朗普和普京9月共同上城楼的事情，看来确实有希望，太好了。</p>
 <p>2 普京刚刚和特朗普通了电话，特朗普又和中国通电话，如果紧接着中俄再通电话，事情就有意思了。</p>
@@ -40327,7 +40363,7 @@
 <p>4 声明中包含了特朗普亲自承诺欢迎中国留学生这件事情。这本来不是很大的事，但现在相当于酒桌上特朗普已经接下了酒杯，众目睽睽就看他喝不喝得下去了。</p>
 <p>5 电话打得稍微早了一点点。如果等特朗普和马斯克这一轮震撼性大争吵全面爆发以后再打电话，效果会更好。</p>
 <p>6 要不和马斯克也互动一下？至少马斯克可以试探一下能不能火速访华。</p>
-<h2 id="6">6</h2>
+<h2 id="6">6<a class="headerlink" href="#6" title="复制链接到此章节">&para;</a></h2>
 <p>马斯克为何反对川普的大美丽法案（Big Beautiful Bill)</p>
 <p>一、马斯克以为，美国国债已成顽疾，既立意消减其规模，必不能再增政府开支，否则此消彼长，问题难解。大美丽法案不仅未能减少赤字，反而大幅增加赤字，国债危险，恐成美国人民不可负担之重。马斯克认为就目前趋势，国债利息将覆盖政府预算，将来国防、民生都无法开支了。</p>
 <p>二、当今世界电动汽车竞争日益剧烈，特斯拉面临的压力空前。法案消减对电动汽车的税收优惠，直接影响了特斯拉公司的经济利益。马斯克为政府效率部工作，经济上已经遭遇了重大损失。此下回归企业，首要目的必是拉升特斯拉股价及业绩。法案成为眼中钉肉中刺。</p>

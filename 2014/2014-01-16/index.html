@@ -26,6 +26,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -104,6 +114,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -40212,8 +40248,8 @@
 
 
 
-<h1 id="2014-01-16">2014-01-16</h1>
-<h2 id="1">1</h2>
+<h1 id="2014-01-16">2014-01-16<a class="headerlink" href="#2014-01-16" title="复制链接到此章节">&para;</a></h1>
+<h2 id="1">1<a class="headerlink" href="#1" title="复制链接到此章节">&para;</a></h2>
 <p>代码狗：身为码农，为12306说两句公道话</p>
 <p>我曾在淘宝写过一段时间代码，2012年在一家百强民企做电商副总，当时在极为艰苦的条件下带队开发了一个B2C网站，走支付宝和银联支付通道，年营业额千万级（当然实在太少了，我只是说这个网站投入了实际的运营）。</p>
 <p>也就在那个时候，我对12306嗤之以鼻，觉得他们做得太烂了，认为自己能带队花几百万半年时间做个好的出来。于是我狂妄地想做一个开源的订票系统给他们。我花了一个星期时间思考建立数据模型，思考到库存这一步的时候，我才发现，12306的库存复杂性比淘宝、京东高很多倍，运算量也大很多倍。传统的分布式数据库、缓存、负载均衡技术并不能恰好满足12306的需求。</p>
@@ -40304,7 +40340,7 @@
 <p>学生由学校提前登记安排购票，这应该是长久以来的惯例，不知现在有没有变化。</p>
 <p>民工稍微麻烦些，但现在实名制之后，也有解决可能。铁道部可以对数据进行整理，然后与地方政府合作，提前对本地出门打工的人群发短信征求购票意向，然后根据需求安排出票（比如根据历史记录，优先销售给那些老客户）。京沪穗等出行大站就可以把更多精力放在临时客流和客运组织上。</p>
 <p>只是一种没有数据支撑的设想。请专业人士拍砖。</p>
-<h2 id="2">2</h2>
+<h2 id="2">2<a class="headerlink" href="#2" title="复制链接到此章节">&para;</a></h2>
 <p>我是什么，我便拥有什么样的时代（黄晋章谈大象公会）</p>
 <p>我是什么，我便拥有什么样的时代</p>
 <p>我们先谈谈“是”是什么的问题。</p>

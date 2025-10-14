@@ -26,6 +26,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -104,6 +114,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -40212,8 +40248,8 @@
 
 
 
-<h1 id="2015-08-06">2015-08-06</h1>
-<h2 id="1">1</h2>
+<h1 id="2015-08-06">2015-08-06<a class="headerlink" href="#2015-08-06" title="复制链接到此章节">&para;</a></h1>
+<h2 id="1">1<a class="headerlink" href="#1" title="复制链接到此章节">&para;</a></h2>
 <p>对 Go 语言的综合评价</p>
 <p>对 Go 语言的综合评价以前写过一些对 Go 语言的负面评价。现在看来，虽然那些评价大部分属实，然而却由于言辞激烈，没有点明具体问题，难以让某些人信服。在经过几个月实际使用 Go 来构造网站之后，我觉得现在是时候对它作一些更加“客观”的评价了。</p>
 <p>定位和优点Go 比起 C 和 C++ 确实有它的优点，这是很显然的事情。它比起 Java 也有少数优点，然而相对而言更多是不足之处。所以我对 Go 的偏好在比 Java 稍低一点的位置。Go 语言比起 C，C++ 的强项，当然是它的简单性和垃圾回收。由于 C 和 C++ 的设计有很多历史遗留问题，所以 Go 看起来确实更加优雅和简单。比起那些大量使用设计模式的 Java 代码，Go 语言的代码也似乎更简单一些。</p>
@@ -40277,7 +40313,7 @@
 <p>所以总而言之，Go 的简单性和优雅程度属于中等偏下。由于没有明显的优势，却又有各种其它语言里没有的问题，所以在实际工程中，我目前更倾向于使用 Java 这样的语言。我不觉得 Go 语言和它的工具链能够帮助我迅速的写出 PySonar 那样精密的代码。</p>
 <p>另外我还听说有人使用 Java 来实现大并发，并没发现比起 Go 有什么明显的不足。Alan Perlis 说，语言设计不应该是把功能堆积起来，而应该努力地减少弱点。从这种角度来看，Go 语言引入了一两个新的功能，同时又引入了相当多的弱点。</p>
 <p>Go 也许暂时在某些个别的情况有特殊的强项，可以单独用于优化系统的某些部分，但我不推荐使用 Go 来实现复杂的算法和整个的系统。</p>
-<h2 id="2">2</h2>
+<h2 id="2">2<a class="headerlink" href="#2" title="复制链接到此章节">&para;</a></h2>
 <p>Lisp的本质(The Nature of Lisp)</p>
 <p>作者 Slava Akhmechet</p>
 <p>译者 Alec Jang</p>
@@ -40409,15 +40445,15 @@
 <p>数据访问层是个很好的例子，这样的例子还有好多。从GUI样板代码、WEB代码、COM和CORBA存根，以及MFC和ATL等等。在这些地方，都是有好多相似代码多次重复。既然这些代码有可能自动编写，而程序员时间又远远比CPU时间昂贵，当然就产生了好多工具来自动生成样板代码。这些工具的本质是什么呢？它们实际上就是制造程序的程序。它们有一个神秘的名字，叫做元编程。所谓元编程的本义，就是如此。</p>
 <p>元编程本来可以用到无数多的地方，但实际上使用的次数却没有那么多。归根结底，我们心里还是在盘算，假设重复代码用拷贝粘贴的话，大概要重复6、7次，对于这样的工作量，值得专门建立一套生成工具吗？当然不值得。数据访问层和COM存根往往需要重用数百次，甚至上千次，所以用工具生成是最好的办法。而那些仅仅是重复几次十几次的代码，是没有必要专门做工具的。不必要的时候也去开发代码生成工具，那就显然过度估计了代码生成的好处。当然，如果创建这类工具足够简单的话，还是应当尽量多用，因为这样做必然会节省时间。现在来看一下有没有合理的办法来达到这个目的。</p>
 <p>现在，C预处理器要派上用场了。我们都用过C/C++的预处理器，我们用它执行简单的编译指令，来产生简单的代码变换（比方说，设置调试代码开关），看一个例子：</p>
-<h1 id="define-triplex-xxx">define triple(X) X+X+X</h1>
+<h1 id="define-triplex-xxx">define triple(X) X+X+X<a class="headerlink" href="#define-triplex-xxx" title="复制链接到此章节">&para;</a></h1>
 <p>这一行的作用是什么？这是一个简单的预编译指令，它把程序中的triple(X)替换称为X+X+X。例如，把所有的triple(5)都换成5+5+5，然后再交给编译器编译。这就是一个简单的代码生成的例子。要是C的预处理器再强大一点，要是能够允许连接数据库，要是能多一些其他简单的机制，我们就可以在我们程序的内部开发自己的数据访问层。下面这个例子，是一个假想的对C宏的扩展：</p>
-<h1 id="get-db-schema127001">get-db-schema("127.0.0.1")</h1>
-<h1 id="iterate-through-tables">iterate-through-tables</h1>
-<h1 id="for-each-table">for-each-table</h1>
+<h1 id="get-db-schema127001">get-db-schema("127.0.0.1")<a class="headerlink" href="#get-db-schema127001" title="复制链接到此章节">&para;</a></h1>
+<h1 id="iterate-through-tables">iterate-through-tables<a class="headerlink" href="#iterate-through-tables" title="复制链接到此章节">&para;</a></h1>
+<h1 id="for-each-table">for-each-table<a class="headerlink" href="#for-each-table" title="复制链接到此章节">&para;</a></h1>
 <p>class #table-name</p>
 <p>{</p>
 <p>};</p>
-<h1 id="end-for-each">end-for-each</h1>
+<h1 id="end-for-each">end-for-each<a class="headerlink" href="#end-for-each" title="复制链接到此章节">&para;</a></h1>
 <p>我们连接数据库结构定义，遍历数据表，然后对每个表创建一个类，只消几行代码就完成了这个工作。这样每次编译工程的时候，这些类都会根据数据库的定义同步更新。显而易见，我们不费吹灰之力就在程序内部建立了一个完整的数据访问层，根本用不着任何外部工具。当然这种作法有一个缺点，那就是我们得学习一套新的"编译时语言"，另一个缺点就是根本不存在这么一个高级版的C预处理器。需要做复杂代码生成的时候，这个语言（译者注：这里指预处理指令，即作者所说的"编译时语言"）本身也一定会变得相当复杂。它必须支持足够多的库和语言结构。比如说我们想要生成的代码要依赖某些ftp服务器上的文件，预处理器就得支持ftp访问，仅仅因为这个任务而不得不创造和学习一门新的语言，真是有点让人恶心（事实上已经存在着有此能力的语言，这样做就更显荒谬）。我们不妨再灵活一点，为什么不直接用C/C++自己作为自己的预处理语言呢？这样子的话，我们可以发挥语言的强大能力，要学的新东西也只不过是几个简单的指示字，这些指示字用来区别编译时代码和运行时代码。</p>
 <p>&lt;%</p>
 <p>cout &lt;&lt; "Enter a number: ";</p>
@@ -40535,7 +40571,7 @@
 <p>Lisp使人超越平庸，走到前沿。学会Lisp意味着你能找到更好的工作，因为聪明的雇主会被你与众不同的洞察力所打动。学会Lisp也可能意味着明天你可能会被解雇，因为你总是强调，如果公司所有软件都用Lisp写，公司将会如何卓越，而这些话你的同事会听烦的。Lisp值得努力学习吗？那些已经学会Lisp的人都说值得，当然，这取决于你的判断。</p>
 <p>你的看法呢？</p>
 <p>这篇文章写写停停，用了几个月才最终完成。如果你觉得有趣，或者有什么问题、意见或建议，请给我发邮件coffeemug@gmail.com，我会很高兴收到你的反馈。</p>
-<h2 id="3">3</h2>
+<h2 id="3">3<a class="headerlink" href="#3" title="复制链接到此章节">&para;</a></h2>
 <p>学术腐败是历史的必然</p>
 <p>学术腐败是历史的必然今天想分析一下世界范围内的学术腐败。我曾经和所有对学术界抱有幻想的人一样，希望有机会发挥自己的才华，过上有智慧的生活。直到最后一个希望破灭之后，我开始分析其中的原因。其结果是非常有趣的，因为我得出的结论是：学术腐败是历史的必然，是人类历史的发展趋势和技术进步的结果。</p>
 <p>为什么这么说呢？首先想想在资本主义社会里人靠什么过活？钱一般人怎么得到钱？工作谁是人最大的工作竞争对手？机器，电脑，互联网，机器人……自己的工作被机器取代了怎么办？寻找机器干不了的工作！什么是机器仍然干不了，而且不久的将来也干不了的工作？搞研究！搞研究是为了什么？制造更高效更智能的机器！然后你就明白了，这是一个让人类越来越痛苦的怪圈。</p>
@@ -40566,7 +40602,7 @@
 <p>当同学们怀着崇尚的心情，跟着一些吹牛皮的助理教授做一些没有希望的研究的时候，我自己的研究早就超过了他们很多年。另外，这篇文章对于广大学术界人士也有一定意义。承认了自己在扯淡总是比举着高尚道德的牌子更加以德服人一些。我鼓励广大正在挣扎中的 PhD 和助理教授们发扬自嘲精神，勇于承认自己的现实和弱点，承认自己其实是不得已为了混饭吃，大家都是混饭吃的。</p>
 <p>有同情心才会有动力，同学们如果知道了你是在混口饭吃，反而会更加理解你的处境，停止质疑你的做法，进而帮助你继续混下去。最后，知道事实的人多了，世界自然而然就会改变。很多人进学术界的原因是为了混饭吃，而当社会更多的了解到学术界的这一真相之后，“名校博士”这种东西就会逐渐贬值，失去它原来的光环。</p>
 <p>人们就会以平常心来看待，最后学术界就不再能吸引那些混饭吃的人，而真正喜欢研究的人也就能自得其所。人们也可以采取甘地的“非暴力不合作”精神，避免成为学术腐败的一部分，就像你知道某个街区经常有吸血鬼出没就不要去一样。这样吸血鬼们找不到食物，邪恶的势力就会逐渐萎缩。知道事实的人们还可以互相鼓舞，发扬正气。腐败的组织慢慢的就会失去人们的支持，走向穷途末路，或者改邪归正。</p>
-<h2 id="4">4</h2>
+<h2 id="4">4<a class="headerlink" href="#4" title="复制链接到此章节">&para;</a></h2>
 <p>怎样写一个解释器</p>
 <p>怎样写一个解释器这是一篇解释器的入门教程。虽然我试图从最基本的原理讲起，尽量让这篇文章不依赖于其它知识，但是这篇教程并不是针对编程的入门知识，所以我假设你已经学会了最基本的 Scheme 和函数式编程。我不是很推崇函数式编程，但它里面确实包含了很重要的一些方法。如果你完全不了解这些，可以读一下 SICP 的第一，二章（或者接下去读 The Little Schemer)。当然你也可以继续读这篇文章，有不懂的地方再去查资料。我在这里也会讲递归和模式匹配的原理。如果你已经了解这些东西，这里的内容也许可以加深你的理解。</p>
 <p>解释器是一种简单却又深奥的东西，以至于好多人都不会写，或者自认为会写却又不真正的会写。在这个领域里有一些历史遗留下来的误解，以至于很少有人真正的知道如何写出正确的解释器。很多“语言专家”或者“逻辑学家”的解释器代码里面有各种各样的错误，却又以谬传谬，搞得无比复杂。这误解的渊源之深，真是一言难尽。你必须从最简单的语言开始，逐步增加语言的复杂度，才能构造出正确的解释器。</p>
@@ -40769,7 +40805,7 @@
 <p>下一步在懂得了这里讲述的基本的解释器构造之后，下一步可以做什么呢？其实从这个基本的解释器原型，你可以进一步发展出很多内容，比如：在这个解释器里加一些构造，比如递归和状态，你就可以得到一个完整的程序语言的解释器，比如 Scheme 或者 Python。</p>
 <p>对这个解释器进行“抽象”，你就可以对程序进行类型推导。感兴趣的话可以参考我实现的这个 Hindley-Milner系统，或者 Python 类型推导。对这个解释器进行一些改变，就可以得到一个非常强大的 online partial evaluator，可以用于编译器优化。</p>
 <p>另外需要指出的是，学会这个解释器并不等于理解了程序语言的理论。所以在学会了这些之后，还是要看一些语义学的书。</p>
-<h2 id="5">5</h2>
+<h2 id="5">5<a class="headerlink" href="#5" title="复制链接到此章节">&para;</a></h2>
 <p>SQL，NoSQL 以及数据库的实质</p>
 <p>王垠</p>
 <p>在之前的一些博文里（比如这篇），我多次提到关系式数据库和 SQL 的缺陷。我觉得它们是制造了问题又自己来解决，而且没有解决好。现在有了点时间，我就把这里面的细节稍微说一下，希望有一定的启发作用。</p>
@@ -40850,7 +40886,7 @@
 <p>有人评论说我其实不懂 SQL，现在我就来考考你的 SQL 编程能力，看看到底是谁理解 SQL 多一些 :)</p>
 <p>题目：请用 SQL 实现 Dijkstra 的最短路径算法。</p>
 <p>为了加深对数据库的认识，每个人都应该用 SQL 来实现这样稍微复杂的算法，而不只是写一些高中生都会的基础程序。如果你仍然相信“What，not How”的广告，反对使用 SQL 来写这样的过程式算法，那么就请你更进一步，使用你所谓的“What 查询方式”来高效的解决最短路径问题。</p>
-<h2 id="6">6</h2>
+<h2 id="6">6<a class="headerlink" href="#6" title="复制链接到此章节">&para;</a></h2>
 <p>谈语法</p>
 <p>谈语法使用和研究过这么多程序语言之后，我觉得几乎不包含多余功能的语言，只有一个：Scheme。所以我觉得它是学习程序设计最好的入手点和进阶工具。当然 Scheme 也有少数的问题，而且缺少一些我想要的功能，但这些都瑕不掩瑜。在用了很多其它的语言之后，我觉得 Scheme 真的是非常优美的语言。</p>
 <p>要想指出 Scheme 所有的优点，并且跟其它语言比较，恐怕要写一本书才讲的清楚。所以在这篇文章里，我只提其中一个最简单，却又几乎被所有人忽视的方面：语法。其它的 Lisp “方言”也有跟 Scheme 类似的语法（都是基于“S表达式”），所以在这篇（仅限这篇）文章里我所指出的“Scheme 的优点”，其实也可以作用于其它的 Lisp 方言。</p>
